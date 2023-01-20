@@ -1,0 +1,23 @@
+{
+  "name": "linaria-circulars-issue",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "packageManager": "yarn@3.3.1",
+  "scripts": {
+    "b:rollup": "rollup --config ./rollup.config.js",
+    "b:webpack": "webpack --config ./webpack.config.js",
+    "b:webpack:linaria": "webpack --config ./webpack-linaria.config.js"
+  },
+  "dependencies": {
+    "@linaria/babel-preset": "^4.3.3",
+    "@linaria/react": "^4.3.3",
+    "@linaria/webpack-loader": "^4.1.11",
+    "css-loader": "^6.7.3",
+    "mini-css-extract-plugin": "^2.7.2",
+    "prettier": "^2.8.3",
+    "rollup": "^3.10.0",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1"
+  }
+}
