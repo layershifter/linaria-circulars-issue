@@ -5,6 +5,7 @@
   "license": "MIT",
   "packageManager": "yarn@3.3.1",
   "scripts": {
+    "b:esbuild": "esbuild --bundle ./src/index.js --outfile=./dist/esbuild/main.js --external:react --external:@linaria/react",
     "b:rollup": "rollup --config ./rollup.config.js",
     "b:webpack": "webpack --config ./webpack.config.js",
     "b:webpack:linaria": "webpack --config ./webpack-linaria.config.js",
@@ -15,6 +16,7 @@
     "@linaria/react": "^4.3.3",
     "@linaria/webpack-loader": "^4.1.11",
     "css-loader": "^6.7.3",
+    "esbuild": "^0.17.3",
     "mini-css-extract-plugin": "^2.7.2",
     "prettier": "^2.8.3",
     "rollup": "^3.10.0",
