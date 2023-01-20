@@ -3,8 +3,12 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 module.exports = {
   externals: { "@linaria/react": "Linaria" },
   mode: "production",
+  entry: "./src/index-no-circulars.js",
   output: {
-    path: require("path").resolve(__dirname, "./dist/webpack-linaria"),
+    path: require("path").resolve(
+      __dirname,
+      "./dist/webpack-linaria-no-circulars"
+    ),
   },
   module: {
     rules: [
